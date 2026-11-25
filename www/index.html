@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ff6a00">
+  <meta name="description" content="فروشگاه تجهیزات شبکه و کامپیوتر">
+  <link rel="manifest" href="manifest.json">
+  <title>نت‌استور | تجهیزات شبکه و کامپیوتر</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <a class="logo" href="#/" aria-label="صفحه اصلی">
+      <span class="logo-mark">N</span><span>نت‌استور</span>
+    </a>
+    <div class="top-actions">
+      <button class="icon-btn" data-go="#/search" aria-label="جستجو">
+        <svg class="i" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </button>
+      <button class="icon-btn" id="themeBtn" data-act="theme" aria-label="تغییر تم">🌙</button>
+    </div>
+  </header>
+
+  <main id="view" class="view" aria-live="polite"></main>
+
+  <nav class="tabbar" aria-label="ناوبری اصلی">
+    <a href="#/" data-tab="home">
+      <svg class="i" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></svg><span>خانه</span>
+    </a>
+    <a href="#/search" data-tab="search">
+      <svg class="i" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><span>جستجو</span>
+    </a>
+    <a href="#/wishlist" data-tab="wishlist">
+      <span class="ico-wrap"><svg class="i" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg><b class="badge" id="wishBadge" hidden>0</b></span><span>علاقه‌مندی</span>
+    </a>
+    <a href="#/cart" data-tab="cart">
+      <span class="ico-wrap"><svg class="i" viewBox="0 0 24 24"><circle cx="9" cy="21" r="1.5"/><circle cx="19" cy="21" r="1.5"/><path d="M1 2h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg><b class="badge" id="cartBadge" hidden>0</b></span><span>سبد خرید</span>
+    </a>
+    <a href="#/profile" data-tab="profile">
+      <svg class="i" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>پروفایل</span>
+    </a>
+  </nav>
+
+  <div id="toasts" aria-live="assertive"></div>
+  <div id="modal" class="modal" hidden><div class="sheet" id="sheet"></div></div>
+
+  <noscript><p style="padding:24px;text-align:center">برای استفاده از برنامه، جاوااسکریپت باید فعال باشد.</p></noscript>
+  <script src="app.js"></script>
+</body>
+</html>
